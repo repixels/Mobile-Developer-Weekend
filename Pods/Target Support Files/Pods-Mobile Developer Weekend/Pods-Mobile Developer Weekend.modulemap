@@ -1,0 +1,6 @@
+framework module Pods_Mobile_Developer_Weekend {
+  umbrella header "Pods-Mobile Developer Weekend-umbrella.h"
+
+  export *
+  module * { export * }
+}
