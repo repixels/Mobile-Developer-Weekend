@@ -13,7 +13,7 @@
         <attribute name="company_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="company_url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
-        <relationship name="contact_info" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contact_Info" inverseName="exhibitor" inverseEntity="Contact_Info" syncable="YES"/>
+        <relationship name="contact_info" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Contact_Info" inverseName="exhibitor" inverseEntity="Contact_Info" syncable="YES"/>
     </entity>
     <entity name="Session" representedClassName=".Session" syncable="YES">
         <attribute name="end_date" optional="YES" attributeType="Date" syncable="YES"/>
@@ -35,7 +35,7 @@
         <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="middle_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="contact_info" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contact_Info" inverseName="speaker" inverseEntity="Contact_Info" syncable="YES"/>
+        <relationship name="contact_info" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Contact_Info" inverseName="speaker" inverseEntity="Contact_Info" syncable="YES"/>
         <relationship name="session" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Session" inverseName="speaker" inverseEntity="Session" syncable="YES"/>
     </entity>
     <entity name="User" representedClassName=".User" syncable="YES">
@@ -48,7 +48,7 @@
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="qr_code" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="contact_info" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contact_Info" inverseName="user" inverseEntity="Contact_Info" syncable="YES"/>
+        <relationship name="contact_info" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Contact_Info" inverseName="user" inverseEntity="Contact_Info" syncable="YES"/>
     </entity>
     <elements>
         <element name="Contact_Info" positionX="-83" positionY="-333" width="128" height="148"/>
