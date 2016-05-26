@@ -20,9 +20,9 @@ extension User {
     @NSManaged var image: NSData?
     @NSManaged var last_name: String?
     @NSManaged var middle_name: String?
+    @NSManaged var password: String?
     @NSManaged var qr_code: String?
     @NSManaged var title: String?
-    @NSManaged var password: String?
-    @NSManaged var contact_info: Contact_Info?
+    @NSManaged var contact_info: NSSet?
 
 }

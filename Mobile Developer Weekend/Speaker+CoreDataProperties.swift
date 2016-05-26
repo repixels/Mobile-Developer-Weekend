@@ -21,7 +21,7 @@ extension Speaker {
     @NSManaged var last_name: String?
     @NSManaged var middle_name: String?
     @NSManaged var title: String?
+    @NSManaged var contact_info: NSSet?
     @NSManaged var session: NSSet?
-    @NSManaged var contact_info: Contact_Info?
 
 }

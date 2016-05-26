@@ -17,6 +17,6 @@ extension Exhibitor {
     @NSManaged var company_name: String?
     @NSManaged var company_url: String?
     @NSManaged var image: NSData?
-    @NSManaged var contact_info: Contact_Info?
+    @NSManaged var contact_info: NSSet?
 
 }
