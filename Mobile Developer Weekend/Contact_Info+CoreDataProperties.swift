@@ -15,7 +15,7 @@ import CoreData
 extension Contact_Info {
 
     @NSManaged var info_type: String?
-    @NSManaged var number: NSNumber?
+    @NSManaged var number: Int16
     @NSManaged var owner_id: String?
     @NSManaged var owner_type: String?
     @NSManaged var exhibitor: Exhibitor?

@@ -14,13 +14,15 @@ import CoreData
 
 extension Session {
 
-    @NSManaged var end_date: NSDate?
+    @NSManaged var end_date: NSTimeInterval
     @NSManaged var location: String?
     @NSManaged var name: String?
     @NSManaged var session_description: String?
-    @NSManaged var start_date: NSDate?
+    @NSManaged var start_date: NSTimeInterval
     @NSManaged var type: String?
-    @NSManaged var liked: NSNumber?
+    @NSManaged var liked: Bool
+    @NSManaged var status: Int16
+    @NSManaged var session_id: Int16
     @NSManaged var speaker: NSSet?
 
 }

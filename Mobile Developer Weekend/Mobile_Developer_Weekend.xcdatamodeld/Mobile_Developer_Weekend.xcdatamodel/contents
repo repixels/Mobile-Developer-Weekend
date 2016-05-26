@@ -21,7 +21,9 @@
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="session_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="session_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="start_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="speaker" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Speaker" inverseName="session" inverseEntity="Speaker" syncable="YES"/>
     </entity>
@@ -43,6 +45,7 @@
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="middle_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="qr_code" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="contact_info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact_Info" inverseName="user" inverseEntity="Contact_Info" syncable="YES"/>
@@ -50,8 +53,8 @@
     <elements>
         <element name="Contact_Info" positionX="-0" positionY="-162" width="128" height="148"/>
         <element name="Exhibitor" positionX="-297" positionY="-40" width="128" height="103"/>
-        <element name="Session" positionX="169" positionY="-360" width="128" height="163"/>
+        <element name="Session" positionX="169" positionY="-360" width="128" height="193"/>
         <element name="Speaker" positionX="-234" positionY="-351" width="128" height="178"/>
-        <element name="User" positionX="-11" positionY="153" width="128" height="178"/>
+        <element name="User" positionX="-11" positionY="153" width="128" height="193"/>
     </elements>
 </model>
