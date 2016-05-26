@@ -17,6 +17,7 @@
 		826CB4FB1CF76F8900E3D701 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4F11CF76F8900E3D701 /* Speaker.swift */; };
 		826CB4FC1CF76F8900E3D701 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4F21CF76F8900E3D701 /* User+CoreDataProperties.swift */; };
 		826CB4FD1CF76F8900E3D701 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4F31CF76F8900E3D701 /* User.swift */; };
+		826CB5001CF7771900E3D701 /* GenericDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4FF1CF7771900E3D701 /* GenericDAO.swift */; };
 		8274E5421CF7527C00917388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5411CF7527C00917388 /* AppDelegate.swift */; };
 		8274E5441CF7527C00917388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5431CF7527C00917388 /* ViewController.swift */; };
 		8274E5471CF7527C00917388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8274E5451CF7527C00917388 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		826CB4F11CF76F8900E3D701 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		826CB4F21CF76F8900E3D701 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		826CB4F31CF76F8900E3D701 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		826CB4FF1CF7771900E3D701 /* GenericDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDAO.swift; sourceTree = "<group>"; };
 		8274E53E1CF7527C00917388 /* Mobile Developer Weekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Developer Weekend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8274E5411CF7527C00917388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8274E5431CF7527C00917388 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			name = poso;
 			sourceTree = "<group>";
 		};
+		826CB4FE1CF776FD00E3D701 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				826CB4FF1CF7771900E3D701 /* GenericDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
 		8274E5351CF7527C00917388 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 		8274E5401CF7527C00917388 /* Mobile Developer Weekend */ = {
 			isa = PBXGroup;
 			children = (
+				826CB4FE1CF776FD00E3D701 /* DAO */,
 				826CB4AC1CF7618F00E3D701 /* poso */,
 				8274E5411CF7527C00917388 /* AppDelegate.swift */,
 				8274E5431CF7527C00917388 /* ViewController.swift */,
@@ -310,6 +321,7 @@
 				826CB4F71CF76F8900E3D701 /* Contact_Info.swift in Sources */,
 				826CB4F61CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift in Sources */,
 				826CB4F81CF76F8900E3D701 /* Exhibitor+CoreDataProperties.swift in Sources */,
+				826CB5001CF7771900E3D701 /* GenericDAO.swift in Sources */,
 				8274E5421CF7527C00917388 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
