@@ -14,7 +14,7 @@ class HtmlRendering{
     /* To use this method just create UILabel then label.attributedText = this method */
     static func renderHtml(let txt : String) -> NSAttributedString
     {
-        let htmlFormat = txt
+        let htmlFormat = txt //html format
         let attrStr = try! NSAttributedString(
             data: htmlFormat.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
             options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
