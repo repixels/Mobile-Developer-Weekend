@@ -19,6 +19,7 @@
 		826CB4FC1CF76F8900E3D701 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4F21CF76F8900E3D701 /* User+CoreDataProperties.swift */; };
 		826CB4FD1CF76F8900E3D701 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4F31CF76F8900E3D701 /* User.swift */; };
 		826CB5001CF7771900E3D701 /* GenericDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4FF1CF7771900E3D701 /* GenericDAO.swift */; };
+		826CB5021CF7A78600E3D701 /* GIFRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB5011CF7A78600E3D701 /* GIFRefreshControl.swift */; };
 		8274E5421CF7527C00917388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5411CF7527C00917388 /* AppDelegate.swift */; };
 		8274E5441CF7527C00917388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5431CF7527C00917388 /* ViewController.swift */; };
 		8274E5471CF7527C00917388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8274E5451CF7527C00917388 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		826CB4F21CF76F8900E3D701 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		826CB4F31CF76F8900E3D701 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		826CB4FF1CF7771900E3D701 /* GenericDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericDAO.swift; sourceTree = "<group>"; };
+		826CB5011CF7A78600E3D701 /* GIFRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFRefreshControl.swift; sourceTree = "<group>"; };
 		8274E53E1CF7527C00917388 /* Mobile Developer Weekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Developer Weekend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8274E5411CF7527C00917388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8274E5431CF7527C00917388 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			children = (
 				8C39A94E1CF783AF00BB4908 /* QRGenerator.swift */,
 				8C39A9501CF783F600BB4908 /* HtmlRendering.swift */,
+				826CB5011CF7A78600E3D701 /* GIFRefreshControl.swift */,
 			);
 			name = "QR and HtmlRender";
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				826CB4F41CF76F8900E3D701 /* Session+CoreDataProperties.swift in Sources */,
 				826CB4FC1CF76F8900E3D701 /* User+CoreDataProperties.swift in Sources */,
 				826CB4FA1CF76F8900E3D701 /* Speaker+CoreDataProperties.swift in Sources */,
+				826CB5021CF7A78600E3D701 /* GIFRefreshControl.swift in Sources */,
 				8274E54A1CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld in Sources */,
 				8274E5441CF7527C00917388 /* ViewController.swift in Sources */,
 				826CB4FB1CF76F8900E3D701 /* Speaker.swift in Sources */,
