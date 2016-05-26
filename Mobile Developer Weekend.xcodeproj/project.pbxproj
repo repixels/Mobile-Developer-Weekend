@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					8274E53D1CF7527C00917388 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = B263Y9M649;
 					};
 					8274E5541CF7527C00917388 = {
 						CreatedOnToolsVersion = 7.3;
@@ -403,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Mobile Developer Weekend/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JETS.Mobile-Developer-Weekend";
@@ -414,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Mobile Developer Weekend/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JETS.Mobile-Developer-Weekend";
