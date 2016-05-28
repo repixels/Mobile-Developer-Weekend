@@ -32,6 +32,7 @@
 		8274E5651CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5641CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift */; };
 		8C39A94F1CF783AF00BB4908 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39A94E1CF783AF00BB4908 /* QRGenerator.swift */; };
 		8C39A9511CF783F600BB4908 /* HtmlRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39A9501CF783F600BB4908 /* HtmlRendering.swift */; };
+		C5FF669E1CF92F9000B2B360 /* DataBaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF669D1CF92F9000B2B360 /* DataBaseOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		8C39A9501CF783F600BB4908 /* HtmlRendering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlRendering.swift; sourceTree = "<group>"; };
 		943AC01B0AF2C624EBABBD6D /* Pods-Mobile Developer WeekendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Developer WeekendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Developer WeekendTests/Pods-Mobile Developer WeekendTests.release.xcconfig"; sourceTree = "<group>"; };
 		B355F9E7BDA74615B5AA7E87 /* Pods-Mobile Developer Weekend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Developer Weekend.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Developer Weekend/Pods-Mobile Developer Weekend.release.xcconfig"; sourceTree = "<group>"; };
+		C5FF669D1CF92F9000B2B360 /* DataBaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				826CB4FF1CF7771900E3D701 /* GenericDAO.swift */,
+				C5FF669D1CF92F9000B2B360 /* DataBaseOperation.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				8274E54A1CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld in Sources */,
 				8274E5441CF7527C00917388 /* ViewController.swift in Sources */,
 				826CB4FB1CF76F8900E3D701 /* Speaker.swift in Sources */,
+				C5FF669E1CF92F9000B2B360 /* DataBaseOperation.swift in Sources */,
 				826CB4F91CF76F8900E3D701 /* Exhibitor.swift in Sources */,
 				826CB4F71CF76F8900E3D701 /* Contact_Info.swift in Sources */,
 				826CB4F61CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift in Sources */,

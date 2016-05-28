@@ -24,5 +24,11 @@ extension User {
     @NSManaged var qr_code: String?
     @NSManaged var title: String?
     @NSManaged var contact_info: NSSet?
+    
+    
+    
+    
+        
+    
 
 }
