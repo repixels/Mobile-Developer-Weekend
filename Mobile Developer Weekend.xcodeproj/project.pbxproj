@@ -10,6 +10,10 @@
 		1A0C1CE9142DF59C4BFCB583 /* libPods-Mobile Developer WeekendUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8799E37374B83FB6D70B58D5 /* libPods-Mobile Developer WeekendUITests.a */; };
 		51DBD30C1DBFF7DD71E8FBC8 /* Pods_Mobile_Developer_Weekend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559A3E1A00447675291F143D /* Pods_Mobile_Developer_Weekend.framework */; };
 		64C48D84652E49FB97C99B4D /* libPods-Mobile Developer WeekendTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FFBB58D6E98C794BA46BA2 /* libPods-Mobile Developer WeekendTests.a */; };
+		68113B581CFB09C500A921A4 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B551CFB09C500A921A4 /* URLs.swift */; };
+		68113B591CFB09C500A921A4 /* NetWork_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */; };
+		68113B5A1CFB09C500A921A4 /* NetWork_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B571CFB09C500A921A4 /* NetWork_Manager.swift */; };
+		68113B5C1CFB0A0D00A921A4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B5B1CFB0A0D00A921A4 /* test.swift */; };
 		826CB4F41CF76F8900E3D701 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EA1CF76F8900E3D701 /* Session+CoreDataProperties.swift */; };
 		826CB4F51CF76F8900E3D701 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EB1CF76F8900E3D701 /* Session.swift */; };
 		826CB4F61CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EC1CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift */; };
@@ -58,6 +62,10 @@
 		51FFBB58D6E98C794BA46BA2 /* libPods-Mobile Developer WeekendTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mobile Developer WeekendTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C420140D919498C8B0E40A /* Pods-Mobile Developer WeekendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Developer WeekendUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Developer WeekendUITests/Pods-Mobile Developer WeekendUITests.release.xcconfig"; sourceTree = "<group>"; };
 		559A3E1A00447675291F143D /* Pods_Mobile_Developer_Weekend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Developer_Weekend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68113B551CFB09C500A921A4 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork_Delegate.swift; sourceTree = "<group>"; };
+		68113B571CFB09C500A921A4 /* NetWork_Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork_Manager.swift; sourceTree = "<group>"; };
+		68113B5B1CFB0A0D00A921A4 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		826CB4EA1CF76F8900E3D701 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		826CB4EB1CF76F8900E3D701 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		826CB4EC1CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact_Info+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -131,6 +139,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		68113B541CFB098B00A921A4 /* NetWork_Package */ = {
+			isa = PBXGroup;
+			children = (
+				68113B551CFB09C500A921A4 /* URLs.swift */,
+				68113B5B1CFB0A0D00A921A4 /* test.swift */,
+				68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */,
+				68113B571CFB09C500A921A4 /* NetWork_Manager.swift */,
+			);
+			name = NetWork_Package;
+			sourceTree = "<group>";
+		};
 		794B26170E78C52EE1C1BFAD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +214,7 @@
 		8274E5401CF7527C00917388 /* Mobile Developer Weekend */ = {
 			isa = PBXGroup;
 			children = (
+				68113B541CFB098B00A921A4 /* NetWork_Package */,
 				8C39A94D1CF7838700BB4908 /* QR and HtmlRender */,
 				826CB4FE1CF776FD00E3D701 /* DAO */,
 				826CB4AC1CF7618F00E3D701 /* poso */,
@@ -512,11 +532,15 @@
 				C5FF669E1CF92F9000B2B360 /* DataBaseOperation.swift in Sources */,
 				826CB4F91CF76F8900E3D701 /* Exhibitor.swift in Sources */,
 				826CB4F71CF76F8900E3D701 /* Contact_Info.swift in Sources */,
+				68113B5A1CFB09C500A921A4 /* NetWork_Manager.swift in Sources */,
 				826CB4F61CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift in Sources */,
 				826CB4F81CF76F8900E3D701 /* Exhibitor+CoreDataProperties.swift in Sources */,
 				8C39A94F1CF783AF00BB4908 /* QRGenerator.swift in Sources */,
 				826CB5001CF7771900E3D701 /* GenericDAO.swift in Sources */,
+				68113B591CFB09C500A921A4 /* NetWork_Delegate.swift in Sources */,
+				68113B581CFB09C500A921A4 /* URLs.swift in Sources */,
 				8274E5421CF7527C00917388 /* AppDelegate.swift in Sources */,
+				68113B5C1CFB0A0D00A921A4 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

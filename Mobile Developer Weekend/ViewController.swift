@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+//    y/jj/kmikmkmß
 
     override func viewDidLoad() {
         super.viewDidLoad()
