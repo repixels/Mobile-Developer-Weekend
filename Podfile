@@ -6,6 +6,11 @@
 target 'Mobile Developer Weekend' do
 	use_frameworks!
 	pod 'ZXingObjC', '~> 3.0'
+	pod 'Alamofire', '~> 3.4'
+	pod 'AlamofireImage', '~> 2.0'
+	pod 'AlamofireNetworkActivityIndicator', '~> 1.0'
+	pod 'AlamofireObjectMapper', '~> 3.0'
+	pod 'EZSwiftExtensions'
 
 end
 
