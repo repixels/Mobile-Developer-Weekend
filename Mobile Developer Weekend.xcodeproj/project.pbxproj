@@ -34,6 +34,7 @@
 		8274E54F1CF7527C00917388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8274E54D1CF7527C00917388 /* LaunchScreen.storyboard */; };
 		8274E55A1CF7527C00917388 /* Mobile_Developer_WeekendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5591CF7527C00917388 /* Mobile_Developer_WeekendTests.swift */; };
 		8274E5651CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5641CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift */; };
+		8C054BC01D01ADCA0042D146 /* TestDaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C054BBF1D01ADCA0042D146 /* TestDaos.swift */; };
 		8C39A94F1CF783AF00BB4908 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39A94E1CF783AF00BB4908 /* QRGenerator.swift */; };
 		8C39A9511CF783F600BB4908 /* HtmlRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39A9501CF783F600BB4908 /* HtmlRendering.swift */; };
 		C5FF669E1CF92F9000B2B360 /* DataBaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF669D1CF92F9000B2B360 /* DataBaseOperation.swift */; };
@@ -94,6 +95,7 @@
 		8274E5661CF7527C00917388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		853C3058125BA28FB87DBAAA /* Pods-Mobile Developer WeekendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Developer WeekendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Developer WeekendTests/Pods-Mobile Developer WeekendTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8799E37374B83FB6D70B58D5 /* libPods-Mobile Developer WeekendUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mobile Developer WeekendUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C054BBF1D01ADCA0042D146 /* TestDaos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDaos.swift; sourceTree = "<group>"; };
 		8C39A94E1CF783AF00BB4908 /* QRGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
 		8C39A9501CF783F600BB4908 /* HtmlRendering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlRendering.swift; sourceTree = "<group>"; };
 		943AC01B0AF2C624EBABBD6D /* Pods-Mobile Developer WeekendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Developer WeekendTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Developer WeekendTests/Pods-Mobile Developer WeekendTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				826CB4FF1CF7771900E3D701 /* GenericDAO.swift */,
 				C5FF669D1CF92F9000B2B360 /* DataBaseOperation.swift */,
+				8C054BBF1D01ADCA0042D146 /* TestDaos.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				8274E54A1CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld in Sources */,
 				8274E5441CF7527C00917388 /* ViewController.swift in Sources */,
 				826CB4FB1CF76F8900E3D701 /* Speaker.swift in Sources */,
+				8C054BC01D01ADCA0042D146 /* TestDaos.swift in Sources */,
 				C5FF669E1CF92F9000B2B360 /* DataBaseOperation.swift in Sources */,
 				826CB4F91CF76F8900E3D701 /* Exhibitor.swift in Sources */,
 				826CB4F71CF76F8900E3D701 /* Contact_Info.swift in Sources */,

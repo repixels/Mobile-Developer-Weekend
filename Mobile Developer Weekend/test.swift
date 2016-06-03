@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,NetWork_Delegate{
+class ViewController2: UIViewController,NetWork_Delegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
