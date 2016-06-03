@@ -9,7 +9,7 @@ import UIKit
 import Foundation
 import CoreData
 
-class DataBaseOperation: NSManagedObject  {
+class DataBaseOperation : NSManagedObject  {
     
     static let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     static let managedContext = appdelegate.managedObjectContext
@@ -27,9 +27,7 @@ class DataBaseOperation: NSManagedObject  {
         
         var entity = NSEntityDescription.entityForName("User", inManagedObjectContext: self.managedContext)
         
-        
         var User = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
-        
         
         User.setValue(Usernew.company_name, forKey: "company_name")
         User.setValue(Usernew.first_name, forKey: "first_name")
@@ -41,10 +39,9 @@ class DataBaseOperation: NSManagedObject  {
         User.setValue(Usernew.password ,forKey: "password")
         User.setValue(Usernew.qr_code, forKey: "qr_code")
         User.setValue(Usernew.title, forKey: "title")
-        User.setValue(Usernew.contact_info, forKey: "contactInfo")
-        
-        
-        
+        User.setValue(Usernew.contact_info, forKey: "contact_info")
+
+        User.managedObjectContext
         
         do{
             
@@ -69,7 +66,7 @@ class DataBaseOperation: NSManagedObject  {
         var user : [NSManagedObject]?
         
         
-        var fetchUser = NSFetchRequest(entityName: "Movie")
+        var fetchUser = NSFetchRequest(entityName: "User")
         
         // if you want to add constrain
         var predicate = NSPredicate(format: "email = %@", email)
@@ -112,6 +109,9 @@ class DataBaseOperation: NSManagedObject  {
         Speaker.setValue(Speakernew .title ,forKey: "title")
         Speaker.setValue(Speakernew .contact_info, forKey: "contact_info")
         Speaker.setValue(Speakernew .session, forKey: "session")
+        
+        
+        
         
         
         
