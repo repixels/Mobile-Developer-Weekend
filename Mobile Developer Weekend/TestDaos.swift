@@ -47,11 +47,11 @@ class TestDao  {
     
     
     static func getUser(){
-        var email : String = "a@a.com"
+        let email : String = "a@a.com"
         
         var testGetUSer =  DataBaseOperation.getUser(email)
        
-        var user = testGetUSer[0]
+        let user = testGetUSer[0]
         print("user name \(user.valueForKey("first_name")) \n")
         print("user last name \(user.valueForKey("last_name")) \n")
         print("user email  \(user.valueForKey("email")) \n")

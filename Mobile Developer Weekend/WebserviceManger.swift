@@ -10,6 +10,7 @@ import Foundation
 import CoreData
 import Alamofire
 import AlamofireObjectMapper
+import ObjectMapper
 import AlamofireImage
 import AlamofireNetworkActivityIndicator
 
@@ -18,71 +19,71 @@ class WebserviceManager
     static let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     static let managedContext = appdelegate.managedObjectContext
     
-    static func getUserInfo(serviceURL: String)
+    static func getUserInfo(serviceURL: String , result: (user:User?, code:String?)->Void)
     {
         Alamofire.request(.GET, serviceURL)
             .responseJSON { response in
                 switch response.result
                 {
+                case .Success(let _data):
                     
-                    case .Success(let _data):
+                    let connectionStatus = _data["status"] as! String
+                    
+                    switch connectionStatus
+                    {
+                    case "view.error":
+                        result(user: nil,code: _data["result"] as? String)
+                        break;
+                    case "view.success":
                         if let returnedUser = _data["result"] as? NSDictionary
                         {
-                            let userID = returnedUser["id"]!
                             
-                            let firstName = returnedUser["firstName"]!
-                            let middleName = returnedUser["middleName"]!
-                            let lastName = returnedUser["lastName"]!
+                            var managedUser = NSEntityDescription.insertNewObjectForEntityForName("User", inManagedObjectContext: managedContext) as! User
                             
-                            let companyName = returnedUser["companyName"]!
-                            let companyTitle = returnedUser["title"]!
-                            
-                            let email = returnedUser["email"]!
-                            
-                            let userQRCode = returnedUser["code"]!
-                            
-                            print(userID)
-                            print(firstName)
-                            print(middleName)
-                            print(lastName)
-                            print(companyName)
-                            print(companyTitle)
-                            print(email)
-                            print(userQRCode)
-                            
-                            
+                            managedUser = Mapper<User>().map(returnedUser)!
+                            result(user: managedUser, code: "view.sucess")
+                        }
+                        else
+                        {
+                            result(user: nil, code: "error")
                         }
                         break;
                     default:
-                        print("None")
+                        result(user: nil, code: "error")
                         break;
+                    }
+                    break;
+                    case .Failure(let _error):
+                        print(_error.code)
+                        print(response.result)
+                        break;
+                    }
                 }
+                
         }
-
-    }
-    
-    static func getImageFromURL(imageURL : String , result: (image: UIImage?)->Void)
-    {
         
-        Alamofire.request(.GET, imageURL)
-            .responseImage { response in
-                if let image = response.result.value
-                {
-                    print("Entered Image")
-                    result(image: image)
-                }
-                else
-                {
-                    print("Entered NIL")
-                    result(image: nil)
-                }
+        static func getImageFromURL(imageURL : String , result: (image: UIImage?)->Void)
+        {
+            
+            Alamofire.request(.GET, imageURL)
+                .responseImage { response in
+                    if let image = response.result.value
+                    {
+                        print("Entered Image")
+                        result(image: image)
+                    }
+                    else
+                    {
+                        print("Entered NIL")
+                        result(image: nil)
+                    }
+            }
         }
-    }
-    
-    func getUserSessions(serviceURL: String)
-    {
         
-    }
-    
-    
+        func getUserSessions(serviceURL: String)
+        {
+            
+        }
+        
+        
 }

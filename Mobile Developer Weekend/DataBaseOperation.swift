@@ -25,9 +25,9 @@ class DataBaseOperation : NSManagedObject  {
     
     static func AddUser(Usernew :User ) ->Void{
         
-        var entity = NSEntityDescription.entityForName("User", inManagedObjectContext: self.managedContext)
+        let entity = NSEntityDescription.entityForName("User", inManagedObjectContext: self.managedContext)
         
-        var User = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
+        let User = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
         
         User.setValue(Usernew.company_name, forKey: "company_name")
         User.setValue(Usernew.first_name, forKey: "first_name")
@@ -66,10 +66,10 @@ class DataBaseOperation : NSManagedObject  {
         var user : [NSManagedObject]?
         
         
-        var fetchUser = NSFetchRequest(entityName: "User")
+        let fetchUser = NSFetchRequest(entityName: "User")
         
         // if you want to add constrain
-        var predicate = NSPredicate(format: "email = %@", email)
+        let predicate = NSPredicate(format: "email = %@", email)
         
          fetchUser.predicate = predicate
         
@@ -94,10 +94,10 @@ class DataBaseOperation : NSManagedObject  {
     
     static func addSpeaker(Speakernew :Speaker ) ->Void{
         
-        var entity = NSEntityDescription.entityForName("Speaker", inManagedObjectContext: self.managedContext)
+        let entity = NSEntityDescription.entityForName("Speaker", inManagedObjectContext: self.managedContext)
         
         
-        var Speaker = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
+        let Speaker = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
         
         Speaker.setValue(Speakernew .biography, forKey: "biography")
         Speaker.setValue(Speakernew .company_name, forKey: "company_name")
@@ -139,7 +139,7 @@ class DataBaseOperation : NSManagedObject  {
         var speakers : [NSManagedObject]?
         
         
-        var fetchUser = NSFetchRequest(entityName: "Speaker")
+        let fetchUser = NSFetchRequest(entityName: "Speaker")
         
         // if you want to add constrain
 //        var predicate = NSPredicate(format: "email = %@", email)
@@ -167,10 +167,10 @@ class DataBaseOperation : NSManagedObject  {
 
     static func addExhibitor(Exhibitornew :Exhibitor ) ->Void{
         
-        var entity = NSEntityDescription.entityForName("Exhibitor", inManagedObjectContext: self.managedContext)
+        let entity = NSEntityDescription.entityForName("Exhibitor", inManagedObjectContext: self.managedContext)
         
         
-        var Exhibitor = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
+        let Exhibitor = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
         
         Exhibitor.setValue(Exhibitornew.company_name, forKey: "company_name")
         Exhibitor.setValue(Exhibitornew.company_url, forKey: "company_url")
@@ -202,7 +202,7 @@ class DataBaseOperation : NSManagedObject  {
         var Exhibitor : [NSManagedObject]?
         
         
-        var fetchUser = NSFetchRequest(entityName: "Exhibitor")
+        let fetchUser = NSFetchRequest(entityName: "Exhibitor")
         
         // if you want to add constrain
         //        var predicate = NSPredicate(format: "email = %@", email)
@@ -230,12 +230,12 @@ class DataBaseOperation : NSManagedObject  {
     
     static func addContactInfo(ContactInfoNew :Contact_Info ) ->Void{
         
-        var entity = NSEntityDescription.entityForName("Contact_Info", inManagedObjectContext: self.managedContext)
+        let entity = NSEntityDescription.entityForName("Contact_Info", inManagedObjectContext: self.managedContext)
         
         
-        var Contactnew = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
+        let Contactnew = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
         
-        var contactNumber = Int(ContactInfoNew.number)
+        let contactNumber = Int(ContactInfoNew.number)
         
         Contactnew.setValue(ContactInfoNew.info_type, forKey: "info_type")
         Contactnew.setValue(contactNumber, forKey: "number")
@@ -272,10 +272,10 @@ class DataBaseOperation : NSManagedObject  {
     
     static func addSession(sessionNew :Session ) ->Void{
         
-        var entity = NSEntityDescription.entityForName("Session", inManagedObjectContext: self.managedContext)
+        let entity = NSEntityDescription.entityForName("Session", inManagedObjectContext: self.managedContext)
         
         
-        var Session = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
+        let Session = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: self.managedContext)
         
         Session.setValue(sessionNew.end_date, forKey: "end_date")
         Session.setValue(sessionNew.liked, forKey: "liked")
@@ -316,7 +316,7 @@ class DataBaseOperation : NSManagedObject  {
         var Session : [NSManagedObject]?
         
         
-        var fetchUser = NSFetchRequest(entityName: "Session")
+        let fetchUser = NSFetchRequest(entityName: "Session")
         
         // if you want to add constrain
         //        var predicate = NSPredicate(format: "email = %@", email)

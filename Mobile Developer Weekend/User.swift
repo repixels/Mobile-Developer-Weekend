@@ -9,10 +9,45 @@
 
 import Foundation
 import CoreData
+import AlamofireObjectMapper
+import ObjectMapper
 
 
-class User: NSManagedObject {
+class User:NSManagedObject , Mappable
+{
+    
+    
+    
+    override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
+        super.init(entity: entity, insertIntoManagedObjectContext: context)
+    }
+    
+    required init?(_ map: Map) {
+        
+        let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appdelegate.managedObjectContext
+        let entity = NSEntityDescription.entityForName("User", inManagedObjectContext: managedContext)
+        
+        super.init(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        
+        mapping(map)
+        
+    }
 
-// Insert code here to add functionality to your managed object subclass
-
+    func mapping(map: Map)
+    {
+        
+        self.first_name <- map["firstName"]
+        self.middle_name <- map["middleName"]
+        self.last_name <- map["lastName"]
+        
+        self.company_name <- map["companyName"]
+        self.title <- map["title"]
+        
+        self.email <- map["email"]
+        
+        self.qr_code <- map["code"]
+        
+        self.contact_info <- map["phones"]
+    }
 }
