@@ -14,6 +14,8 @@
 		68113B591CFB09C500A921A4 /* NetWork_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */; };
 		68113B5A1CFB09C500A921A4 /* NetWork_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B571CFB09C500A921A4 /* NetWork_Manager.swift */; };
 		68113B5C1CFB0A0D00A921A4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B5B1CFB0A0D00A921A4 /* test.swift */; };
+		82114C831D07707800E70C1A /* Agenda+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */; };
+		82114C841D07707800E70C1A /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82114C821D07707800E70C1A /* Agenda.swift */; };
 		822D0A521D01FA85002370EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D0A511D01FA85002370EC /* LoginViewController.swift */; };
 		826CB4F41CF76F8900E3D701 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EA1CF76F8900E3D701 /* Session+CoreDataProperties.swift */; };
 		826CB4F51CF76F8900E3D701 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EB1CF76F8900E3D701 /* Session.swift */; };
@@ -69,6 +71,8 @@
 		68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork_Delegate.swift; sourceTree = "<group>"; };
 		68113B571CFB09C500A921A4 /* NetWork_Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork_Manager.swift; sourceTree = "<group>"; };
 		68113B5B1CFB0A0D00A921A4 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Agenda+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82114C821D07707800E70C1A /* Agenda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		822D0A511D01FA85002370EC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		826CB4EA1CF76F8900E3D701 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		826CB4EB1CF76F8900E3D701 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				826CB4F11CF76F8900E3D701 /* Speaker.swift */,
 				826CB4F21CF76F8900E3D701 /* User+CoreDataProperties.swift */,
 				826CB4F31CF76F8900E3D701 /* User.swift */,
+				82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */,
+				82114C821D07707800E70C1A /* Agenda.swift */,
 			);
 			name = poso;
 			sourceTree = "<group>";
@@ -529,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				826CB4FD1CF76F8900E3D701 /* User.swift in Sources */,
+				82114C841D07707800E70C1A /* Agenda.swift in Sources */,
 				8C39A9511CF783F600BB4908 /* HtmlRendering.swift in Sources */,
 				826CB4F51CF76F8900E3D701 /* Session.swift in Sources */,
 				826CB4F41CF76F8900E3D701 /* Session+CoreDataProperties.swift in Sources */,
@@ -553,6 +560,7 @@
 				68113B581CFB09C500A921A4 /* URLs.swift in Sources */,
 				8274E5421CF7527C00917388 /* AppDelegate.swift in Sources */,
 				68113B5C1CFB0A0D00A921A4 /* test.swift in Sources */,
+				82114C831D07707800E70C1A /* Agenda+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

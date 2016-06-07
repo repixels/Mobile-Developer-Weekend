@@ -1,3 +1,4 @@
+
 //
 //  WebserviceManger.swift
 //  Mobile Developer Weekend
@@ -80,9 +81,43 @@ class WebserviceManager
             }
         }
         
-        func getUserSessions(serviceURL: String)
+        static func getUserSessions(serviceURL: String)
         {
-            
+            Alamofire.request(.GET, serviceURL)
+                .responseJSON { response in
+                    switch response.result
+                    {
+                    case .Success(let _data):
+                            let connectionStatus = _data["status"] as! String
+                            
+                            switch connectionStatus
+                            {
+                                case "view.error":
+                                    print(_data["result"])
+                                    break;
+                                case "view.success":
+                                    if let returnedAgendas = _data["result"] as? NSDictionary
+                                    {
+                                        let _managedAgendas  = Mapper<Agenda>().mapArray(returnedAgendas.valueForKey("agendas"))!
+                                        let sessions: Array<Session> = _managedAgendas[0].sessions?.allObjects as! [Session]
+                                        for object in sessions 
+                                        {
+                                            print(object.name!)
+                                            print(object.speaker!.valueForKey("first_name"))
+                                        }
+                                    }
+                                    break;
+                                default:
+                                    print(_data["result"])
+                                    break;
+                            }
+                            break;
+                    
+                    case .Failure(let _error):
+                            print(_error)
+                            break;
+                    }
+            }
         }
         
         

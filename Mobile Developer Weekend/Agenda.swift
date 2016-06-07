@@ -1,21 +1,18 @@
 //
-//  Contact_Info.swift
-//  Mobile Developer Weekend
+//  Agenda.swift
+//  
 //
-//  Created by RE Pixels on 5/26/16.
-//  Copyright © 2016 ITI. All rights reserved.
+//  Created by RE Pixels on 6/7/16.
+//
 //
 
 import Foundation
 import CoreData
 import ObjectMapper
-import AlamofireObjectMapper
 
 
-class Contact_Info: NSManagedObject , Mappable {
+class Agenda: NSManagedObject , Mappable {
 
-// Insert code here to add functionality to your managed object subclass
-    
     override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
         super.init(entity: entity, insertIntoManagedObjectContext: context)
     }
@@ -24,7 +21,7 @@ class Contact_Info: NSManagedObject , Mappable {
         
         let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appdelegate.managedObjectContext
-        let entity = NSEntityDescription.entityForName("Contact_Info", inManagedObjectContext: managedContext)
+        let entity = NSEntityDescription.entityForName("Agenda", inManagedObjectContext: managedContext)
         
         super.init(entity: entity!, insertIntoManagedObjectContext: managedContext)
         
@@ -32,8 +29,14 @@ class Contact_Info: NSManagedObject , Mappable {
         
     }
     
-    func mapping(map: Map) {
-        self.number <- map["phones"]
+    
+    func mapping(map: Map)
+    {
+        var sessionsArray : [Session]?
+        self.date <- map["date"]
+        sessionsArray <- map["sessions"]
+        self.sessions = NSSet(array: sessionsArray!)
+        sessionsArray = nil
     }
 
 }
