@@ -30,14 +30,14 @@ class ViewController2: UIViewController,NetWork_Delegate{
     
       }
     func actionOfURL() {
-        var urlOf_things = URLs.loginURL("Name", password: "passsword")
+        let urlOf_things = URLs.loginURL("Name", password: "passsword")
         self.connectToService(urlOf_things, serviceName: "login")
     }
     
     
     func connectToService(url:String, serviceName:String) {
      //  NetWork_Manager.connect(url, serviceName)
-        var netWorkManager: NetWork_Manager = NetWork_Manager()
+        let netWorkManager: NetWork_Manager = NetWork_Manager()
         netWorkManager.myDelegat = self
         netWorkManager.connect(url, serviceName: serviceName)
         

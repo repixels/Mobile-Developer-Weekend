@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15A284" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Agenda" representedClassName=".Agenda" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Session" inverseName="agenda" inverseEntity="Session" syncable="YES"/>
+    </entity>
     <entity name="Contact_Info" representedClassName=".Contact_Info" syncable="YES">
         <attribute name="info_type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -16,15 +20,16 @@
         <relationship name="contact_info" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Contact_Info" inverseName="exhibitor" inverseEntity="Contact_Info" syncable="YES"/>
     </entity>
     <entity name="Session" representedClassName=".Session" syncable="YES">
-        <attribute name="end_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="end_date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="liked" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="session_description" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="session_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="start_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="start_date" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="agenda" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Agenda" inverseName="sessions" inverseEntity="Agenda" syncable="YES"/>
         <relationship name="speaker" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Speaker" inverseName="session" inverseEntity="Speaker" syncable="YES"/>
     </entity>
     <entity name="Speaker" representedClassName=".Speaker" syncable="YES">
@@ -53,8 +58,9 @@
     <elements>
         <element name="Contact_Info" positionX="-83" positionY="-333" width="128" height="148"/>
         <element name="Exhibitor" positionX="-297" positionY="-175" width="128" height="103"/>
-        <element name="Session" positionX="171" positionY="-360" width="128" height="193"/>
+        <element name="Session" positionX="225" positionY="-220" width="128" height="208"/>
         <element name="Speaker" positionX="207" positionY="-70" width="128" height="178"/>
         <element name="User" positionX="-270" positionY="-40" width="128" height="193"/>
+        <element name="Agenda" positionX="144" positionY="-387" width="128" height="73"/>
     </elements>
 </model>

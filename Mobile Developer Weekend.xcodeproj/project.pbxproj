@@ -14,6 +14,9 @@
 		68113B591CFB09C500A921A4 /* NetWork_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */; };
 		68113B5A1CFB09C500A921A4 /* NetWork_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B571CFB09C500A921A4 /* NetWork_Manager.swift */; };
 		68113B5C1CFB0A0D00A921A4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B5B1CFB0A0D00A921A4 /* test.swift */; };
+		82114C831D07707800E70C1A /* Agenda+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */; };
+		82114C841D07707800E70C1A /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82114C821D07707800E70C1A /* Agenda.swift */; };
+		822D0A521D01FA85002370EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D0A511D01FA85002370EC /* LoginViewController.swift */; };
 		826CB4F41CF76F8900E3D701 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EA1CF76F8900E3D701 /* Session+CoreDataProperties.swift */; };
 		826CB4F51CF76F8900E3D701 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EB1CF76F8900E3D701 /* Session.swift */; };
 		826CB4F61CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EC1CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift */; };
@@ -34,6 +37,7 @@
 		8274E54F1CF7527C00917388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8274E54D1CF7527C00917388 /* LaunchScreen.storyboard */; };
 		8274E55A1CF7527C00917388 /* Mobile_Developer_WeekendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5591CF7527C00917388 /* Mobile_Developer_WeekendTests.swift */; };
 		8274E5651CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5641CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift */; };
+		828EA6841D02144B002AEB9E /* WebserviceManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828EA6831D02144B002AEB9E /* WebserviceManger.swift */; };
 		8C054BC01D01ADCA0042D146 /* TestDaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C054BBF1D01ADCA0042D146 /* TestDaos.swift */; };
 		8C39A94F1CF783AF00BB4908 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39A94E1CF783AF00BB4908 /* QRGenerator.swift */; };
 		8C39A9511CF783F600BB4908 /* HtmlRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39A9501CF783F600BB4908 /* HtmlRendering.swift */; };
@@ -67,6 +71,9 @@
 		68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork_Delegate.swift; sourceTree = "<group>"; };
 		68113B571CFB09C500A921A4 /* NetWork_Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork_Manager.swift; sourceTree = "<group>"; };
 		68113B5B1CFB0A0D00A921A4 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Agenda+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82114C821D07707800E70C1A /* Agenda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
+		822D0A511D01FA85002370EC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		826CB4EA1CF76F8900E3D701 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		826CB4EB1CF76F8900E3D701 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		826CB4EC1CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact_Info+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -93,6 +100,7 @@
 		8274E5601CF7527C00917388 /* Mobile Developer WeekendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Developer WeekendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8274E5641CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Developer_WeekendUITests.swift; sourceTree = "<group>"; };
 		8274E5661CF7527C00917388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		828EA6831D02144B002AEB9E /* WebserviceManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebserviceManger.swift; sourceTree = "<group>"; };
 		853C3058125BA28FB87DBAAA /* Pods-Mobile Developer WeekendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Developer WeekendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Developer WeekendTests/Pods-Mobile Developer WeekendTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8799E37374B83FB6D70B58D5 /* libPods-Mobile Developer WeekendUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mobile Developer WeekendUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C054BBF1D01ADCA0042D146 /* TestDaos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDaos.swift; sourceTree = "<group>"; };
@@ -178,6 +186,8 @@
 				826CB4F11CF76F8900E3D701 /* Speaker.swift */,
 				826CB4F21CF76F8900E3D701 /* User+CoreDataProperties.swift */,
 				826CB4F31CF76F8900E3D701 /* User.swift */,
+				82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */,
+				82114C821D07707800E70C1A /* Agenda.swift */,
 			);
 			name = poso;
 			sourceTree = "<group>";
@@ -228,6 +238,8 @@
 				8274E54D1CF7527C00917388 /* LaunchScreen.storyboard */,
 				8274E5501CF7527C00917388 /* Info.plist */,
 				8274E5481CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld */,
+				822D0A511D01FA85002370EC /* LoginViewController.swift */,
+				828EA6831D02144B002AEB9E /* WebserviceManger.swift */,
 			);
 			path = "Mobile Developer Weekend";
 			sourceTree = "<group>";
@@ -267,12 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8274E5691CF7527D00917388 /* Build configuration list for PBXNativeTarget "Mobile Developer Weekend" */;
 			buildPhases = (
-				1DF07E54C8D2DEC86649BC93 /* 📦 Check Pods Manifest.lock */,
+				1DF07E54C8D2DEC86649BC93 /* [CP] Check Pods Manifest.lock */,
 				8274E53A1CF7527C00917388 /* Sources */,
 				8274E53B1CF7527C00917388 /* Frameworks */,
 				8274E53C1CF7527C00917388 /* Resources */,
-				42E4DD9F2CEB2CE2074798B3 /* 📦 Embed Pods Frameworks */,
-				10BD4CB08E63CE224FE51495 /* 📦 Copy Pods Resources */,
+				42E4DD9F2CEB2CE2074798B3 /* [CP] Embed Pods Frameworks */,
+				10BD4CB08E63CE224FE51495 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,12 +299,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8274E56C1CF7527D00917388 /* Build configuration list for PBXNativeTarget "Mobile Developer WeekendTests" */;
 			buildPhases = (
-				862A53213ED4078FFE697DE8 /* 📦 Check Pods Manifest.lock */,
+				862A53213ED4078FFE697DE8 /* [CP] Check Pods Manifest.lock */,
 				8274E5511CF7527C00917388 /* Sources */,
 				8274E5521CF7527C00917388 /* Frameworks */,
 				8274E5531CF7527C00917388 /* Resources */,
-				EC8BD6173F036127C860861C /* 📦 Embed Pods Frameworks */,
-				36371F12E090791B73168399 /* 📦 Copy Pods Resources */,
+				EC8BD6173F036127C860861C /* [CP] Embed Pods Frameworks */,
+				36371F12E090791B73168399 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,11 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8274E56F1CF7527D00917388 /* Build configuration list for PBXNativeTarget "Mobile Developer WeekendUITests" */;
 			buildPhases = (
-				5AAF4BD002B5F104C627DDEE /* 📦 Check Pods Manifest.lock */,
+				5AAF4BD002B5F104C627DDEE /* [CP] Check Pods Manifest.lock */,
 				8274E55C1CF7527C00917388 /* Sources */,
 				8274E55D1CF7527C00917388 /* Frameworks */,
 				8274E55E1CF7527C00917388 /* Resources */,
-				B06449FC215A4443CFA110E5 /* 📦 Copy Pods Resources */,
+				B06449FC215A4443CFA110E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,14 +407,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10BD4CB08E63CE224FE51495 /* 📦 Copy Pods Resources */ = {
+		10BD4CB08E63CE224FE51495 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,14 +422,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mobile Developer Weekend/Pods-Mobile Developer Weekend-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1DF07E54C8D2DEC86649BC93 /* 📦 Check Pods Manifest.lock */ = {
+		1DF07E54C8D2DEC86649BC93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,14 +437,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		36371F12E090791B73168399 /* 📦 Copy Pods Resources */ = {
+		36371F12E090791B73168399 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,14 +452,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mobile Developer WeekendTests/Pods-Mobile Developer WeekendTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		42E4DD9F2CEB2CE2074798B3 /* 📦 Embed Pods Frameworks */ = {
+		42E4DD9F2CEB2CE2074798B3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,14 +467,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mobile Developer Weekend/Pods-Mobile Developer Weekend-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5AAF4BD002B5F104C627DDEE /* 📦 Check Pods Manifest.lock */ = {
+		5AAF4BD002B5F104C627DDEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,14 +482,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		862A53213ED4078FFE697DE8 /* 📦 Check Pods Manifest.lock */ = {
+		862A53213ED4078FFE697DE8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,14 +497,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B06449FC215A4443CFA110E5 /* 📦 Copy Pods Resources */ = {
+		B06449FC215A4443CFA110E5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,14 +512,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mobile Developer WeekendUITests/Pods-Mobile Developer WeekendUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC8BD6173F036127C860861C /* 📦 Embed Pods Frameworks */ = {
+		EC8BD6173F036127C860861C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				826CB4FD1CF76F8900E3D701 /* User.swift in Sources */,
+				82114C841D07707800E70C1A /* Agenda.swift in Sources */,
 				8C39A9511CF783F600BB4908 /* HtmlRendering.swift in Sources */,
 				826CB4F51CF76F8900E3D701 /* Session.swift in Sources */,
 				826CB4F41CF76F8900E3D701 /* Session+CoreDataProperties.swift in Sources */,
@@ -534,7 +547,9 @@
 				826CB4FB1CF76F8900E3D701 /* Speaker.swift in Sources */,
 				8C054BC01D01ADCA0042D146 /* TestDaos.swift in Sources */,
 				C5FF669E1CF92F9000B2B360 /* DataBaseOperation.swift in Sources */,
+				822D0A521D01FA85002370EC /* LoginViewController.swift in Sources */,
 				826CB4F91CF76F8900E3D701 /* Exhibitor.swift in Sources */,
+				828EA6841D02144B002AEB9E /* WebserviceManger.swift in Sources */,
 				826CB4F71CF76F8900E3D701 /* Contact_Info.swift in Sources */,
 				68113B5A1CFB09C500A921A4 /* NetWork_Manager.swift in Sources */,
 				826CB4F61CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift in Sources */,
@@ -545,6 +560,7 @@
 				68113B581CFB09C500A921A4 /* URLs.swift in Sources */,
 				8274E5421CF7527C00917388 /* AppDelegate.swift in Sources */,
 				68113B5C1CFB0A0D00A921A4 /* test.swift in Sources */,
+				82114C831D07707800E70C1A /* Agenda+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
