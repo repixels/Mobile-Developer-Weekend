@@ -29,22 +29,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonPressed(sender: AnyObject)
     {
-//        WebserviceManager.getUserInfo(URLs.loginURL("ehab.m.ashraf@gmail.com", password: "72623422")) { (user:User? , code:String?) -> Void in
-//            print(user!)
-////            DataBaseOperation.AddUser(user!)
-//        }
-//        
-//        var testGetUSer =  DataBaseOperation.getUser("ehab.m.ashraf@gmail.com")
-//        
-//        let user = testGetUSer[0]
-//        print("user name \(user.valueForKey("first_name")) \n")
-//        print("user last name \(user.valueForKey("last_name")) \n")
-//        print("user email  \(user.valueForKey("email")) \n")
-//        print("user QR  \(user.valueForKey("qr_code")) \n")
-//        let contactInfo = user.valueForKey("contact_info")
-//        print(contactInfo?.phoneNumber)
-        
-        WebserviceManager.getUserSessions(URLs.getSessionsURL("ehab.m.ashraf@gmail.com"))
+//        WebserviceManager.getExhibitors("http://www.mobiledeveloperweekend.net/service/getExhibitors?userName=ehab.m.ashraf@gmail.com")
         
     }
 

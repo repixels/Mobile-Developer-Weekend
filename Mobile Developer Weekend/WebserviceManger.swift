@@ -54,71 +54,100 @@ class WebserviceManager
                         break;
                     }
                     break;
-                    case .Failure(let _error):
-                        print(_error.code)
-                        print(response.result)
+                case .Failure(let _error):
+                    result(user: nil,code: _error.code.toString)
+                    break;
+                }
+        }
+        
+    }
+    
+    static func getImageFromURL(imageURL : String , result: (image: UIImage?)->Void)
+    {
+        
+        Alamofire.request(.GET, imageURL)
+            .responseImage { response in
+                if let image = response.result.value
+                {
+                    print("Entered Image")
+                    result(image: image)
+                }
+                else
+                {
+                    print("Entered NIL")
+                    result(image: nil)
+                }
+        }
+    }
+    
+    static func getUserSessions(serviceURL: String , result: (agendas:[Agenda]?, code:String?)->Void)
+    {
+        Alamofire.request(.GET, serviceURL)
+            .responseJSON { response in
+                switch response.result
+                {
+                case .Success(let _data):
+                    let connectionStatus = _data["status"] as! String
+                    
+                    switch connectionStatus
+                    {
+                    case "view.error":
+                        
+                        result(agendas: nil,code: connectionStatus)
+                        break;
+                    case "view.success":
+                        if let returnedAgendas = _data["result"] as? NSDictionary
+                        {
+                            let _managedAgendas  = Mapper<Agenda>().mapArray(returnedAgendas.valueForKey("agendas"))!
+                            result(agendas: _managedAgendas, code: connectionStatus)
+                        }
+                        break;
+                    default:
+                        print(_data["result"])
                         break;
                     }
+                    break;
+                    
+                case .Failure(let _error):
+                    print(_error)
+                    break;
+                }
+        }
+    }
+    
+    static func getExhibitors(serviceURL : String , result: (exhibitors:[Exhibitor]?, code:String?)->Void)
+    {
+        Alamofire.request(.GET ,serviceURL)
+            .responseJSON{ response in
+                switch response.result
+                {
+                case .Success(let _data):
+                    let connectionStatus = _data["status"] as! String
+                    
+                    switch connectionStatus
+                    {
+                    case "view.error":
+                        result(exhibitors: nil,code: "")
+                        break;
+                    case "view.success":
+                        
+                        if let returnedExhibitors = _data["result"]
+                        {
+                            let _managedExhibitors  = Mapper<Exhibitor>().mapArray(returnedExhibitors)!
+                            result(exhibitors: _managedExhibitors,code: connectionStatus)
+                            
+                        }
+                        break;
+                    default:
+                        result(exhibitors: nil,code: connectionStatus)
+                        break;
+                    }
+                    break;
+                case .Failure(let _error):
+                    result(exhibitors: nil , code: _error.code.toString)
+                    break;
                 }
                 
         }
-        
-        static func getImageFromURL(imageURL : String , result: (image: UIImage?)->Void)
-        {
-            
-            Alamofire.request(.GET, imageURL)
-                .responseImage { response in
-                    if let image = response.result.value
-                    {
-                        print("Entered Image")
-                        result(image: image)
-                    }
-                    else
-                    {
-                        print("Entered NIL")
-                        result(image: nil)
-                    }
-            }
-        }
-        
-        static func getUserSessions(serviceURL: String)
-        {
-            Alamofire.request(.GET, serviceURL)
-                .responseJSON { response in
-                    switch response.result
-                    {
-                    case .Success(let _data):
-                            let connectionStatus = _data["status"] as! String
-                            
-                            switch connectionStatus
-                            {
-                                case "view.error":
-                                    print(_data["result"])
-                                    break;
-                                case "view.success":
-                                    if let returnedAgendas = _data["result"] as? NSDictionary
-                                    {
-                                        let _managedAgendas  = Mapper<Agenda>().mapArray(returnedAgendas.valueForKey("agendas"))!
-                                        let sessions: Array<Session> = _managedAgendas[0].sessions?.allObjects as! [Session]
-                                        for object in sessions 
-                                        {
-                                            print(object.name!)
-                                            print(object.speaker!.valueForKey("first_name"))
-                                        }
-                                    }
-                                    break;
-                                default:
-                                    print(_data["result"])
-                                    break;
-                            }
-                            break;
-                    
-                    case .Failure(let _error):
-                            print(_error)
-                            break;
-                    }
-            }
-        }
-        
-        
+    }
 }
