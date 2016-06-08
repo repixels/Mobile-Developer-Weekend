@@ -10,12 +10,15 @@ import UIKit
 import Alamofire
 import AlamofireImage
 import EZSwiftExtensions
+import TextFieldEffects
 
 class LoginViewController: UIViewController {
-    @IBOutlet weak var emailTextField: UITextField!
-
-    @IBOutlet weak var userImageView: UIImageView!
-    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var emailTextField: HoshiTextField!
+    @IBOutlet weak var passwordTextField: HoshiTextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,12 +29,39 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func loginButtonPressed(sender: AnyObject)
-    {
+
+    @IBAction func loginButtonPressed(sender: AnyObject) {
+        
+        let userEmail = emailTextField.text
+        let userPassword = passwordTextField.text
+        
+        
+        print(URLs.loginURL(userEmail!, password: userPassword!))
+        
+        WebserviceManager.getUserInfo(URLs.loginURL(userEmail!, password: userPassword!)) { (user, code) in
+            let returnedResult = code!
+            switch returnedResult
+            {
+                case "view.sucess":
+                    print(user)
+                    break;
+                default:
+                    print("Failure : \(code)")
+                    break;
+            }
+        }
+        
+        
         
     }
-
+    
+    
+    @IBAction func registerButtonPressed(sender: AnyObject) {
+    }
+    
+//    func generate
+    
+    
     /*
     // MARK: - Navigation
 
