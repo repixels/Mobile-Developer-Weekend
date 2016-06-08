@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
         let userPassword = passwordTextField.text
         
         
-        print(URLs.loginURL(userEmail!, password: userPassword!))
+        print(URLs.getSpeakersURL(userEmail!))
         
         WebserviceManager.getUserInfo(URLs.loginURL(userEmail!, password: userPassword!)) { (user, code) in
             let returnedResult = code!
@@ -50,16 +50,22 @@ class LoginViewController: UIViewController {
                     break;
             }
         }
-        
-        
-        
+
     }
     
     
     @IBAction func registerButtonPressed(sender: AnyObject) {
     }
     
-//    func generate
+    
+    func generateErrorAlert(errorMessage: String?)
+    {
+        if errorMessage != nil
+        {
+            let alert = UIAlertController(title: "Login Failed", message: errorMessage!, preferredStyle: UIAlertControllerStyle.Alert)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
     
     
     /*

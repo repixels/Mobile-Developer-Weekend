@@ -101,18 +101,62 @@ class WebserviceManager
                             let _managedAgendas  = Mapper<Agenda>().mapArray(returnedAgendas.valueForKey("agendas"))!
                             result(agendas: _managedAgendas, code: connectionStatus)
                         }
+                        else
+                        {
+                            result(agendas: nil, code: "error")
+                        }
                         break;
                     default:
-                        print(_data["result"])
+                        result(agendas: nil, code: "error")
                         break;
                     }
                     break;
                     
                 case .Failure(let _error):
-                    print(_error)
+                    result(agendas: nil, code: _error.code.toString)
                     break;
                 }
         }
+    }
+    
+    
+    static func getSpeakers(serviceURL: String , result:(speakers: [Speaker]?,code:String?)->Void)
+    {
+        Alamofire.request(.GET, serviceURL)
+            .responseJSON { response in
+                switch response.result
+                {
+                case .Success(let _data):
+                    let connectionStatus = _data["status"] as! String
+                    
+                    switch connectionStatus
+                    {
+                    case "view.error":
+                        result(speakers: nil,code: connectionStatus)
+                        break;
+                    case "view.success":
+                        if let returnedSpeakers = _data["result"]
+                        {
+                            let _managedSpeakers  = Mapper<Speaker>().mapArray(returnedSpeakers)!
+                            result(speakers: _managedSpeakers, code: connectionStatus)
+                        }
+                        else
+                        {
+                            result(speakers: nil, code: "error")
+                        }
+                        break;
+                    default:
+                        result(speakers: nil, code: "error")
+                        break;
+                    }
+                    break;
+                    
+                case .Failure(let _error):
+                    result(speakers: nil, code: _error.code.toString)
+                    break;
+                }
+        }
+        
     }
     
     static func getExhibitors(serviceURL : String , result: (exhibitors:[Exhibitor]?, code:String?)->Void)
