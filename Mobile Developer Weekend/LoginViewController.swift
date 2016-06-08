@@ -29,7 +29,6 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonPressed(sender: AnyObject)
     {
-//        WebserviceManager.getExhibitors("http://www.mobiledeveloperweekend.net/service/getExhibitors?userName=ehab.m.ashraf@gmail.com")
         
     }
 

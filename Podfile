@@ -11,6 +11,7 @@ target 'Mobile Developer Weekend' do
 	pod 'AlamofireNetworkActivityIndicator', '~> 1.0'
 	pod 'AlamofireObjectMapper', '~> 3.0'
 	pod 'EZSwiftExtensions'
+	pod "TextFieldEffects"
 
 end
 
