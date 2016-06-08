@@ -11,9 +11,6 @@
 		51DBD30C1DBFF7DD71E8FBC8 /* Pods_Mobile_Developer_Weekend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559A3E1A00447675291F143D /* Pods_Mobile_Developer_Weekend.framework */; };
 		64C48D84652E49FB97C99B4D /* libPods-Mobile Developer WeekendTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FFBB58D6E98C794BA46BA2 /* libPods-Mobile Developer WeekendTests.a */; };
 		68113B581CFB09C500A921A4 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B551CFB09C500A921A4 /* URLs.swift */; };
-		68113B591CFB09C500A921A4 /* NetWork_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */; };
-		68113B5A1CFB09C500A921A4 /* NetWork_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B571CFB09C500A921A4 /* NetWork_Manager.swift */; };
-		68113B5C1CFB0A0D00A921A4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68113B5B1CFB0A0D00A921A4 /* test.swift */; };
 		82114C831D07707800E70C1A /* Agenda+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */; };
 		82114C841D07707800E70C1A /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82114C821D07707800E70C1A /* Agenda.swift */; };
 		822D0A521D01FA85002370EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D0A511D01FA85002370EC /* LoginViewController.swift */; };
@@ -68,9 +65,6 @@
 		53C420140D919498C8B0E40A /* Pods-Mobile Developer WeekendUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Developer WeekendUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Developer WeekendUITests/Pods-Mobile Developer WeekendUITests.release.xcconfig"; sourceTree = "<group>"; };
 		559A3E1A00447675291F143D /* Pods_Mobile_Developer_Weekend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Developer_Weekend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68113B551CFB09C500A921A4 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
-		68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork_Delegate.swift; sourceTree = "<group>"; };
-		68113B571CFB09C500A921A4 /* NetWork_Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork_Manager.swift; sourceTree = "<group>"; };
-		68113B5B1CFB0A0D00A921A4 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Agenda+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		82114C821D07707800E70C1A /* Agenda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		822D0A511D01FA85002370EC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -149,15 +143,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		68113B541CFB098B00A921A4 /* NetWork_Package */ = {
+		68113B541CFB098B00A921A4 /* Network Manager */ = {
 			isa = PBXGroup;
 			children = (
 				68113B551CFB09C500A921A4 /* URLs.swift */,
-				68113B5B1CFB0A0D00A921A4 /* test.swift */,
-				68113B561CFB09C500A921A4 /* NetWork_Delegate.swift */,
-				68113B571CFB09C500A921A4 /* NetWork_Manager.swift */,
+				828EA6831D02144B002AEB9E /* WebserviceManger.swift */,
 			);
-			name = NetWork_Package;
+			name = "Network Manager";
 			sourceTree = "<group>";
 		};
 		794B26170E78C52EE1C1BFAD /* Pods */ = {
@@ -227,7 +219,7 @@
 		8274E5401CF7527C00917388 /* Mobile Developer Weekend */ = {
 			isa = PBXGroup;
 			children = (
-				68113B541CFB098B00A921A4 /* NetWork_Package */,
+				68113B541CFB098B00A921A4 /* Network Manager */,
 				8C39A94D1CF7838700BB4908 /* QR and HtmlRender */,
 				826CB4FE1CF776FD00E3D701 /* DAO */,
 				826CB4AC1CF7618F00E3D701 /* poso */,
@@ -239,7 +231,6 @@
 				8274E5501CF7527C00917388 /* Info.plist */,
 				8274E5481CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld */,
 				822D0A511D01FA85002370EC /* LoginViewController.swift */,
-				828EA6831D02144B002AEB9E /* WebserviceManger.swift */,
 			);
 			path = "Mobile Developer Weekend";
 			sourceTree = "<group>";
@@ -551,15 +542,12 @@
 				826CB4F91CF76F8900E3D701 /* Exhibitor.swift in Sources */,
 				828EA6841D02144B002AEB9E /* WebserviceManger.swift in Sources */,
 				826CB4F71CF76F8900E3D701 /* Contact_Info.swift in Sources */,
-				68113B5A1CFB09C500A921A4 /* NetWork_Manager.swift in Sources */,
 				826CB4F61CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift in Sources */,
 				826CB4F81CF76F8900E3D701 /* Exhibitor+CoreDataProperties.swift in Sources */,
 				8C39A94F1CF783AF00BB4908 /* QRGenerator.swift in Sources */,
 				826CB5001CF7771900E3D701 /* GenericDAO.swift in Sources */,
-				68113B591CFB09C500A921A4 /* NetWork_Delegate.swift in Sources */,
 				68113B581CFB09C500A921A4 /* URLs.swift in Sources */,
 				8274E5421CF7527C00917388 /* AppDelegate.swift in Sources */,
-				68113B5C1CFB0A0D00A921A4 /* test.swift in Sources */,
 				82114C831D07707800E70C1A /* Agenda+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
