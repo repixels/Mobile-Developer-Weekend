@@ -8,15 +8,32 @@
 
 import UIKit
 import CoreData
+import Alamofire
+import AlamofireNetworkActivityIndicator
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        NetworkActivityIndicatorManager.sharedManager.isEnabled = true
+        NetworkActivityIndicatorManager.sharedManager.startDelay = 0
+        NetworkActivityIndicatorManager.sharedManager.completionDelay = 0.5
+        
+        
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let isLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isLoggedIn")
+        
+        if isLoggedIn
+        {
+            let tabbarRootController = mainStoryboard.instantiateViewControllerWithIdentifier("AgendaTabBarController") as! ParentTabbarViewController
+            self.window?.rootViewController = tabbarRootController
+            self.window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 

@@ -38,19 +38,36 @@ class LoginViewController: UIViewController {
         
         print(URLs.getSpeakersURL(userEmail!))
         
+        
+        
         WebserviceManager.getUserInfo(URLs.loginURL(userEmail!, password: userPassword!)) { (user, code) in
             let returnedResult = code!
+            print(returnedResult)
             switch returnedResult
             {
                 case "view.sucess":
-                    print(user)
+                    self.performSegueWithIdentifier("Login To Agenda", sender: self)
                     break;
                 default:
-                    print("Failure : \(code)")
+                    self.generateErrorAlert(code)
                     break;
             }
         }
 
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        switch segue.identifier!
+        {
+            case "Login To Agenda":
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setBool(true, forKey: "isLoggedIn")
+                defaults.setObject(emailTextField.text, forKey: "userEmail")
+                break;
+            default: break
+            
+        }
     }
     
     
@@ -63,6 +80,8 @@ class LoginViewController: UIViewController {
         if errorMessage != nil
         {
             let alert = UIAlertController(title: "Login Failed", message: errorMessage!, preferredStyle: UIAlertControllerStyle.Alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alert.addAction(defaultAction)
             self.presentViewController(alert, animated: true, completion: nil)
         }
     }

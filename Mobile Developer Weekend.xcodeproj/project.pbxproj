@@ -14,6 +14,10 @@
 		82114C831D07707800E70C1A /* Agenda+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */; };
 		82114C841D07707800E70C1A /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82114C821D07707800E70C1A /* Agenda.swift */; };
 		822D0A521D01FA85002370EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D0A511D01FA85002370EC /* LoginViewController.swift */; };
+		824D561B1D08D90E00A2CD95 /* FullAgendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824D561A1D08D90E00A2CD95 /* FullAgendaTableViewController.swift */; };
+		824D561D1D08D91800A2CD95 /* DayOneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824D561C1D08D91800A2CD95 /* DayOneTableViewController.swift */; };
+		824D561F1D08D92000A2CD95 /* DayTwoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824D561E1D08D92000A2CD95 /* DayTwoTableViewController.swift */; };
+		824D56211D08D92800A2CD95 /* DayThreeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824D56201D08D92800A2CD95 /* DayThreeTableViewController.swift */; };
 		826CB4F41CF76F8900E3D701 /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EA1CF76F8900E3D701 /* Session+CoreDataProperties.swift */; };
 		826CB4F51CF76F8900E3D701 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EB1CF76F8900E3D701 /* Session.swift */; };
 		826CB4F61CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4EC1CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift */; };
@@ -27,13 +31,13 @@
 		826CB5001CF7771900E3D701 /* GenericDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB4FF1CF7771900E3D701 /* GenericDAO.swift */; };
 		826CB5021CF7A78600E3D701 /* GIFRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826CB5011CF7A78600E3D701 /* GIFRefreshControl.swift */; };
 		8274E5421CF7527C00917388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5411CF7527C00917388 /* AppDelegate.swift */; };
-		8274E5441CF7527C00917388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5431CF7527C00917388 /* ViewController.swift */; };
 		8274E5471CF7527C00917388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8274E5451CF7527C00917388 /* Main.storyboard */; };
 		8274E54A1CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5481CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld */; };
 		8274E54C1CF7527C00917388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8274E54B1CF7527C00917388 /* Assets.xcassets */; };
 		8274E54F1CF7527C00917388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8274E54D1CF7527C00917388 /* LaunchScreen.storyboard */; };
 		8274E55A1CF7527C00917388 /* Mobile_Developer_WeekendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5591CF7527C00917388 /* Mobile_Developer_WeekendTests.swift */; };
 		8274E5651CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8274E5641CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift */; };
+		828C12781D08E79300B3CE51 /* ParentTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828C12771D08E79300B3CE51 /* ParentTabbarViewController.swift */; };
 		828EA6841D02144B002AEB9E /* WebserviceManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828EA6831D02144B002AEB9E /* WebserviceManger.swift */; };
 		8C054BC01D01ADCA0042D146 /* TestDaos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C054BBF1D01ADCA0042D146 /* TestDaos.swift */; };
 		8C39A94F1CF783AF00BB4908 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C39A94E1CF783AF00BB4908 /* QRGenerator.swift */; };
@@ -68,6 +72,10 @@
 		82114C811D07707800E70C1A /* Agenda+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Agenda+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		82114C821D07707800E70C1A /* Agenda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		822D0A511D01FA85002370EC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		824D561A1D08D90E00A2CD95 /* FullAgendaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullAgendaTableViewController.swift; sourceTree = "<group>"; };
+		824D561C1D08D91800A2CD95 /* DayOneTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOneTableViewController.swift; sourceTree = "<group>"; };
+		824D561E1D08D92000A2CD95 /* DayTwoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTwoTableViewController.swift; sourceTree = "<group>"; };
+		824D56201D08D92800A2CD95 /* DayThreeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayThreeTableViewController.swift; sourceTree = "<group>"; };
 		826CB4EA1CF76F8900E3D701 /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		826CB4EB1CF76F8900E3D701 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		826CB4EC1CF76F8900E3D701 /* Contact_Info+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact_Info+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -82,7 +90,6 @@
 		826CB5011CF7A78600E3D701 /* GIFRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFRefreshControl.swift; sourceTree = "<group>"; };
 		8274E53E1CF7527C00917388 /* Mobile Developer Weekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Developer Weekend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8274E5411CF7527C00917388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8274E5431CF7527C00917388 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8274E5461CF7527C00917388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8274E5491CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mobile_Developer_Weekend.xcdatamodel; sourceTree = "<group>"; };
 		8274E54B1CF7527C00917388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +101,7 @@
 		8274E5601CF7527C00917388 /* Mobile Developer WeekendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Developer WeekendUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8274E5641CF7527C00917388 /* Mobile_Developer_WeekendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Developer_WeekendUITests.swift; sourceTree = "<group>"; };
 		8274E5661CF7527C00917388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		828C12771D08E79300B3CE51 /* ParentTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentTabbarViewController.swift; sourceTree = "<group>"; };
 		828EA6831D02144B002AEB9E /* WebserviceManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebserviceManger.swift; sourceTree = "<group>"; };
 		853C3058125BA28FB87DBAAA /* Pods-Mobile Developer WeekendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Developer WeekendTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Developer WeekendTests/Pods-Mobile Developer WeekendTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8799E37374B83FB6D70B58D5 /* libPods-Mobile Developer WeekendUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mobile Developer WeekendUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +173,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		824D56101D08D7A400A2CD95 /* Agenda Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				824D561A1D08D90E00A2CD95 /* FullAgendaTableViewController.swift */,
+				824D561C1D08D91800A2CD95 /* DayOneTableViewController.swift */,
+				824D561E1D08D92000A2CD95 /* DayTwoTableViewController.swift */,
+				824D56201D08D92800A2CD95 /* DayThreeTableViewController.swift */,
+				828C12771D08E79300B3CE51 /* ParentTabbarViewController.swift */,
+			);
+			name = "Agenda Tab Bar";
+			sourceTree = "<group>";
+		};
+		825BAFFE1D09905800F44EA3 /* Login Controller */ = {
+			isa = PBXGroup;
+			children = (
+				822D0A511D01FA85002370EC /* LoginViewController.swift */,
+			);
+			name = "Login Controller";
+			sourceTree = "<group>";
+		};
+		825BAFFF1D09906C00F44EA3 /* Application Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8274E5411CF7527C00917388 /* AppDelegate.swift */,
+				8274E5501CF7527C00917388 /* Info.plist */,
+				8274E5481CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld */,
+			);
+			name = "Application Controllers";
+			sourceTree = "<group>";
+		};
+		825BB0001D09907C00F44EA3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8274E5451CF7527C00917388 /* Main.storyboard */,
+				8274E54D1CF7527C00917388 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		826CB4AC1CF7618F00E3D701 /* poso */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,18 +266,15 @@
 		8274E5401CF7527C00917388 /* Mobile Developer Weekend */ = {
 			isa = PBXGroup;
 			children = (
+				824D56101D08D7A400A2CD95 /* Agenda Tab Bar */,
 				68113B541CFB098B00A921A4 /* Network Manager */,
 				8C39A94D1CF7838700BB4908 /* QR and HtmlRender */,
 				826CB4FE1CF776FD00E3D701 /* DAO */,
 				826CB4AC1CF7618F00E3D701 /* poso */,
-				8274E5411CF7527C00917388 /* AppDelegate.swift */,
-				8274E5431CF7527C00917388 /* ViewController.swift */,
-				8274E5451CF7527C00917388 /* Main.storyboard */,
+				825BAFFF1D09906C00F44EA3 /* Application Controllers */,
+				825BB0001D09907C00F44EA3 /* Storyboards */,
 				8274E54B1CF7527C00917388 /* Assets.xcassets */,
-				8274E54D1CF7527C00917388 /* LaunchScreen.storyboard */,
-				8274E5501CF7527C00917388 /* Info.plist */,
-				8274E5481CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld */,
-				822D0A511D01FA85002370EC /* LoginViewController.swift */,
+				825BAFFE1D09905800F44EA3 /* Login Controller */,
 			);
 			path = "Mobile Developer Weekend";
 			sourceTree = "<group>";
@@ -528,13 +572,14 @@
 				826CB4FD1CF76F8900E3D701 /* User.swift in Sources */,
 				82114C841D07707800E70C1A /* Agenda.swift in Sources */,
 				8C39A9511CF783F600BB4908 /* HtmlRendering.swift in Sources */,
+				824D56211D08D92800A2CD95 /* DayThreeTableViewController.swift in Sources */,
 				826CB4F51CF76F8900E3D701 /* Session.swift in Sources */,
 				826CB4F41CF76F8900E3D701 /* Session+CoreDataProperties.swift in Sources */,
 				826CB4FC1CF76F8900E3D701 /* User+CoreDataProperties.swift in Sources */,
 				826CB4FA1CF76F8900E3D701 /* Speaker+CoreDataProperties.swift in Sources */,
 				826CB5021CF7A78600E3D701 /* GIFRefreshControl.swift in Sources */,
 				8274E54A1CF7527C00917388 /* Mobile_Developer_Weekend.xcdatamodeld in Sources */,
-				8274E5441CF7527C00917388 /* ViewController.swift in Sources */,
+				828C12781D08E79300B3CE51 /* ParentTabbarViewController.swift in Sources */,
 				826CB4FB1CF76F8900E3D701 /* Speaker.swift in Sources */,
 				8C054BC01D01ADCA0042D146 /* TestDaos.swift in Sources */,
 				C5FF669E1CF92F9000B2B360 /* DataBaseOperation.swift in Sources */,
@@ -546,8 +591,11 @@
 				826CB4F81CF76F8900E3D701 /* Exhibitor+CoreDataProperties.swift in Sources */,
 				8C39A94F1CF783AF00BB4908 /* QRGenerator.swift in Sources */,
 				826CB5001CF7771900E3D701 /* GenericDAO.swift in Sources */,
+				824D561F1D08D92000A2CD95 /* DayTwoTableViewController.swift in Sources */,
+				824D561D1D08D91800A2CD95 /* DayOneTableViewController.swift in Sources */,
 				68113B581CFB09C500A921A4 /* URLs.swift in Sources */,
 				8274E5421CF7527C00917388 /* AppDelegate.swift in Sources */,
+				824D561B1D08D90E00A2CD95 /* FullAgendaTableViewController.swift in Sources */,
 				82114C831D07707800E70C1A /* Agenda+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
